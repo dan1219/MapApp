@@ -24,16 +24,11 @@
 </template>
 
 <script>
-    import MapListItem from "./MapListItem";
     export default {
         name:'MapList',
         props:
             ['list','index','marks']
         ,
-        components:{
-            MapListItem
-        },
-
         methods:{
             changeState(){
                  this.$emit('changeState',this.index);
