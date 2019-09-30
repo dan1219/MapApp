@@ -24,18 +24,6 @@ mongoose.connect(db,{useUnifiedTopology: true,useNewUrlParser: true})
         console.log(err);
 });
 
-// app.get('/',(req,res)=>{
-//     res.send("Проверка");
-// })
-
-// app.post('/check',(req,res)=>{
-//     console.log(req.body);
-//     res.status(200).json({
-//         msg:'ok'
-//     })
-// });
-
-
 
 const users = require('./routes/api/users');
 app.use('/api/users',users);
